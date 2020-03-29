@@ -10,18 +10,18 @@ import javax.persistence.Table;
 public class CountryLanguage {
 
     @Id
-    @Column(name = "code")
-    private String code;
+    @Column(name = "country_code")
+    private String countryCode;
 
     @Column(name = "language")
     private String language;
 
     public String getCode() {
-        return code;
+        return countryCode;
     }
 
     public void setCode(String code) {
-        this.code = code;
+        this.countryCode = code;
     }
 
     public String getLanguage() {

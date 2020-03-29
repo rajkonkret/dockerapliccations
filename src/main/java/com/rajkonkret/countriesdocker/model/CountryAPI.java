@@ -8,9 +8,9 @@ public class CountryAPI {
         private String continent;
         private Integer population;
         private Integer lifeExpectancy;
-        private List<String> countryLanguage;
+        private List<CountryLanguage> countryLanguage;
 
-    public CountryAPI(String name, String continent, Integer population, Integer lifeExpectancy, List<String> countryLanguage) {
+    public CountryAPI(String name, String continent, Integer population, Integer lifeExpectancy, List<CountryLanguage> countryLanguage) {
         this.name = name;
         this.continent = continent;
         this.population = population;
@@ -50,11 +50,11 @@ public class CountryAPI {
         this.lifeExpectancy = lifeExpectancy;
     }
 
-    public List<String> getCountryLanguage() {
+    public List<CountryLanguage> getCountryLanguage() {
         return countryLanguage;
     }
 
-    public void setCountryLanguage(List<String> countryLanguage) {
+    public void setCountryLanguage(List<CountryLanguage> countryLanguage) {
         this.countryLanguage = countryLanguage;
     }
 }

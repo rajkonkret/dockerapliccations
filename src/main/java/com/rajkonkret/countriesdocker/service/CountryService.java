@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class CountryService {
     @Autowired
-    CountryRepository counryRepository;
+    CountryRepository countryRepository;
 
     public Country getCountry(String code) {
-        return counryRepository.findByCode(code);
+        return countryRepository.findByCode(code);
     }
 }
